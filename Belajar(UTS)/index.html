@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Buku Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <header>
+    <h1>Toko Buku Online</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#kategori">Kategori</a></li>
+        <li><a href="#buku">Buku</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Beranda -->
+  <main>
+  <section id="beranda">
+    <h2>Selamat Datang!</h2>
+    <p>Kami menyediakan berbagai macam buku dari berbagai kategori. Temukan buku favoritmu hari ini!</p>
+    <p>
+      Ingin lihat buku lainnya? 
+      <a href="https://www.gramedia.com" target="_blank" rel="noopener noreferrer">
+        Kunjungi Gramedia
+      </a>
+    </p>
+    
+    <!-- SLIDER  -->
+    <div class="slider-container">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    
+      <div class="slider" id="imageSlider">
+        <!-- Clone last (7) -->
+        <img src="https://m.media-amazon.com/images/I/41xShlnTZTL._SX374_BO1,204,203,200_.jpg" alt="Gambar 7 (clone)">
+        
+        <!-- Real slides -->
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81GqtNbs%2BPL.jpg" alt="Gambar 1">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/713jIoMO3UL.jpg" alt="Gambar 2">
+        <img src="https://m.media-amazon.com/images/I/41as+WafrFL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Gambar 3">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Gambar 4">
+        <img src="https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UF1000,1000_QL80_.jpg" alt="Gambar 5">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81gepf1eMqL.jpg" alt="Gambar 6">
+        <img src="https://m.media-amazon.com/images/I/41xShlnTZTL._SX374_BO1,204,203,200_.jpg" alt="Gambar 7">
+      
+        <!-- Clone first (1) -->
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81GqtNbs%2BPL.jpg" alt="Gambar 1 (clone)">
+      </div>
+    
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+      
+    </div> 
+    
+    <!-- VIDEO IKLAN -->
+    <div class="video-iklan">
+      <h3>Iklan</h3>
+      <iframe width="100%" height="350" 
+              src="https://www.youtube.com/embed/JgFT3I6RcRo?autoplay=1&mute=1"
+              title="Video Iklan Gramedia"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+
+    <!-- Kategori Buku -->
+    <section id="kategori">
+      <h2>Kategori Buku</h2>
+      <ul>
+        <li>Fiksi</li>
+        <li>Non-Fiksi</li>
+        <li>Teknologi</li>
+        <li>Bisnis</li>
+        <li>Pendidikan</li>
+      </ul>
+    </section>
+
+    <!-- Daftar Buku -->
+    <section id="buku">
+      <h2>Daftar Buku Terbaru</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama Buku</th>
+            <th>Penulis</th>
+            <th>Harga</th>
+            <th>Stok</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Belajar HTML & CSS</td>
+            <td>Andi Susanto</td>
+            <td>Rp 80.000</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Logika Pemrograman</td>
+            <td>Siti Rahma</td>
+            <td>Rp 95.000</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Membangun Startup</td>
+            <td>Fahmi Darmawan</td>
+            <td>Rp 120.000</td>
+            <td>8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni">
+      <h2>Testimoni Pembeli</h2>
+      <article>
+        <p><strong>Lisa, Jakarta:</strong> "Pelayanan cepat dan bukunya lengkap banget!"</p>
+      </article>
+      <article>
+        <p><strong>Rudi, Bandung:</strong> "Toko online terpercaya. Saya sudah beli 5 buku di sini!"</p>
+      </article>
+    </section>
+
+    <!-- Form Kontak -->
+    <section id="kontak">
+      <h2>Hubungi Kami</h2>
+      <form action="#" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Toko Buku Online. All rights reserved.</p>
+    <p>
+      Sumber referensi buku: 
+      <a href="https://www.gramedia.com" target="_blank" rel="noopener noreferrer">
+        Gramedia.com
+      </a>
+    </p>
+  </footer>
+
+
+  <!-- JAVA SCRIPT UNTUK SLIDER -->
+  <script>
+    const slider = document.getElementById("imageSlider");
+    const slides = slider.querySelectorAll("img");
+    let index = 1;
+    const slideWidth = slides[0].clientWidth + 10;
+  
+    // Set posisi awal ke slide ke-1 (yang asli)
+    slider.style.transform = `translateX(-${index * slideWidth}px)`;
+  
+    function moveSlide(step) {
+      index += step;
+      slider.style.transition = "transform 0.5s ease-in-out";
+      slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+  
+    slider.addEventListener("transitionend", () => {
+      // Jika ke kanan dan sampai clone pertama (index terakhir)
+      if (index === slides.length - 1) {
+        setTimeout(() => {
+          slider.style.transition = "none";
+          index = 1;
+          slider.style.transform = `translateX(-${index * slideWidth}px)`;
+        }, 20); // kasih delay 20ms
+      }
+  
+      // Jika ke kiri dan sampai clone terakhir (index 0)
+      if (index === 0) {
+        setTimeout(() => {
+          slider.style.transition = "none";
+          index = slides.length - 2;
+          slider.style.transform = `translateX(-${index * slideWidth}px)`;
+        }, 20); // delay agar lebih halus
+      }
+    });
+
+    setInterval(() => moveSlide(1), 4000); // geser tiap 4 detik
+  </script>
+  
+</body>
+</html>
